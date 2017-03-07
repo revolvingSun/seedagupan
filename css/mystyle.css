@@ -1,0 +1,227 @@
+*,a{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header nav#nav-zone{
+	border-radius: 0;
+	border: 0;
+	background-color: #eee;
+	margin-bottom: 0;
+	/* border: 1px solid blue;*/
+	padding: 0;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+	padding-top: 0px;
+	box-shadow: 0 2px 1px #aaa;
+} 
+
+div.navbar-header{
+	/* border: 1px solid yellow; */
+	/*background-color: green; */
+	
+	
+}
+
+div.navbar-brand{
+	border: 1px solid yellow; 
+	min-height: 40px;
+	margin-left: 15px;
+	/* background-color: green; */
+	padding: 0;
+	
+}
+
+div.navbar-brand h1#web-title {
+	font-family: 'Kaushan Script', 'Courgette', cursive, serif;
+	font-size: 2em;
+	/* border: 1px solid yellow; */
+	text-shadow: 1px 1px 2px;
+	color: #6dcff6;
+	margin: 0 0 0 0px;
+	text-align: left;
+	
+	
+}
+
+p#description{
+	font-family: 'Kaushan Script', 'Courgette', cursive, serif;
+	font-size: 1em;
+	
+	text-shadow: 1px 1px 2px;
+	color: #6dcff6;
+	
+	
+	
+	
+}
+
+#logo-img{
+	
+	background-color: #eee;
+	width: 100px;
+	height: 100px;
+	margin: 0 25px 0px 10px;
+	border: 1px solid black; 
+	display: block;
+	background: url('../images/logoDagupan_small.png') no-repeat;
+}
+
+/* container  for header section*/
+div#bottle{
+	border: 1px solid pink;
+	padding: 0;
+	
+}
+
+button#butones{
+	/* border: 1px solid blue; */
+	margin: 10px 25px 0 0;
+	
+	
+}
+
+/*
+nav div.container{
+	border: 1px solid red;
+	
+}
+
+ p#log-img{
+	margin: 0;
+	padding: 0;
+	background: url('images/logoDagupanSeal.png') no-repeat;
+	width: 200px;
+	height: 200px;	
+	border: 1px solid black; 
+	overflow: hidden;
+	
+}
+
+div.navbar-brand{
+	border: 1px solid green;
+	
+}
+
+/****************    MAIN CONTENT SECTION   ********************/
+div#mainContent{
+	padding: 0;
+	margin: 0;
+	background-color: #6dcff6;
+	
+	
+}
+
+div#main-container{
+	height: 550px;
+	border: 1px solid #222; 
+	
+	
+}
+
+
+/****************    END OF MAIN CONTENT    ********************/
+
+
+/****************    FOOTER CONTENT         ********************/
+footer {
+	background-color: #efff00;
+	
+}
+
+ div#footer-container{
+	border: 1px solid #222;
+	height: 200px;
+	
+}
+
+
+
+/****************    END OF FOOTER			*******************/   
+
+
+
+
+/****************    MEDIA QUERIES SECTION  *******************/
+
+/*************   LARGE DEVICES    *****************/
+
+@media (min-width: 1200px){
+	#logo-img{
+		/* border: 3px solid pink;*/
+		width: 150px;
+		height: 150px;
+		background: url('../images/logoDagupan.png') no-repeat;
+	}
+}
+
+/***********   MEDIUM DEVICES     **********/
+
+@media (min-width: 992px and max-width: 1199px){
+	#logo-img{
+		/* border: 1px solid blue; */
+		
+	}
+	
+	
+}
+
+/***************        SMALL DEVICES  *********/
+
+@media (min-width: 768px and max-width: 991px){
+	#logo-img{
+		
+		
+		
+	}
+	
+	div.navbar-brand{
+		margin-bottom: 3px;
+		
+	}
+	
+	div.navbar-brand h1#web-title{
+		font-size: 6vw;
+		
+	}
+	
+	 p#description {
+		font-size: 4vw;
+		
+	}
+	
+}
+
+/**********************    Very small devices  **************************/
+
+@media (max-width: 768px){
+	#logo-img{
+		display: hidden;
+	}
+	div.navbar-brand{
+		margin-bottom: 2px;
+		margin-top: 10px;
+		
+	}
+	
+	div.navbar-brand h1#web-title{
+		font-size: 5vw;
+		
+	}
+	
+	 p#description {
+		font-size: 3vw;
+		
+	}
+	
+	header{
+		
+		
+	}
+	/*  decrease the header height */
+	header nav#nav-zone{
+		padding-bottom: 4vw;
+		
+	}
+}
