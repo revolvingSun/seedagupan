@@ -17,7 +17,7 @@ header nav#nav-zone{
 	
 	/* text-transform: uppercase; */
 	/* min-height: 150px; */
-	/* box-shadow: 0 2px 1px #aaa; */
+	box-shadow: 0 3px 2px #bbb; 
 	border-radius: 0;
 	
 	padding-top: 10px;
@@ -48,7 +48,7 @@ div.navbar-header{
  div.navbar-brand{
 	/* border: 1px solid yellow;   */
 	text-transform: uppercase;
-	background-color: #ccc;
+	/* background-color: #ccc;*/
 	opacity: .5;
 	/* background-color: orange;  */
 }
@@ -59,10 +59,6 @@ div.navbar-brand a {
 	
 }
 
-div.navbar-brand a:hover{
-	text-shadow: 2px 2px 2px #999;
-	
-}
 
 
 a, a:hover{
@@ -82,7 +78,7 @@ h1#web-title {
 	margin: 0;
 	padding: 0;
 	
-	text-shadow: 1px 1px 2px black;
+	/* text-shadow: 1px 1px 2px black; */
 	color: #6dcff6;
 	
 	
@@ -99,6 +95,12 @@ p#description{
 	
 	
 }
+
+h1#web-title:hover {
+	text-shadow: 2px 2px 2px #999; 
+	
+}
+
 
 #logo-img{
 	/* margin: 0 25px 0px 10px;  */
@@ -118,24 +120,57 @@ p#description{
 /* container  for header section*/
 
 
+/******* Button section    ******/
+
 button#butones{
 	/* border: 1px solid blue; */
 	
 	background-color: #efff00;
 	border-color: #6dcff6;
+	box-shadow:0px 2px 2px #ccc; 
 	
+}
+
+button#butones span.icon-bar{
+	width: 23px;
+	height: 2px;
+	background-color: #6dcff6;
 	
 }
 
 button#butones:hover{
 		background-color: #ddd;
-		border-color: #efff00;
-		box-shadow:0px 3px 2px #ccc;
+		
+		box-shadow:0px 3px 2px #ccc; 
+		
 	}
+	
+button#butones:hover span.icon-bar {
+	width: 23px;
+	height: 2px;
+	background-color: #6dcff6;
+	box-shadow:0px 1px 2px #ccc; 
+}
+
+button#butones:hover span.icon-bar {
+	width: 23px;
+	height: 2px;
+	background-color: #6dcff6;
+	box-shadow:0px 1px 2px #ccc; 
+}
+
+/**** End of BUTTON  *****/ 
+
+
+li.active{
+	background-color: #fff;
+	opacity: 1;
+}	
 
 /* default width is 100% */
+
 div#menus-list {
-	/* background-color: #ddd;  */
+	background-color: #ddd;
 	
 	position: absolute;
 	bottom: 0;
@@ -143,39 +178,50 @@ div#menus-list {
 	
 	
 	/* border: 1px solid yellow;  */
-	margin-top: 0;
-	padding-top: 0;
+	/* margin-top: 0;
+	padding-top: 0;*/
+	
+	padding-left: 0;
 }
 
 div#menus-list > ul {
 	/* margin: 0; */
 	margin-top: 0;
+	margin-bottom: 0;
+	
 	
 	
 }
 
-div#menus-list > ul li{
+div#menus-list ul.primera li{
 	/* margin: 0; */
-	padding: 1px 0;
-	text-align: left;
+	/* padding: 1px 0;*/ 
+	text-align: center;
+	background-color: #ddd;
+	margin: 0;
 	
 }
 
 div#menus-list ul ul{
 	
 	/* padding: 0; */
-	background-color: #eee; 
-	/*margin-top: 45px; */
-	border-radius: 5px;
+	background-color: #ddd; 
+	
+	border-radius:  0 0 5px 5px;
+	opacity: .9;
+	text-align: right;
+	padding: 0;
 }
 
 
 
 
-div#menus-list ul li ul li{
-	background-color: #eee;
+div#menus-list ul ul.segunda li{
+	background-color: #ddd; 
 	text-align: right;
+	
 	/* opacity: .8; */
+
 	
 }
 
@@ -187,7 +233,9 @@ div#menus-list li a{
 }
 
 div#menus-list ul li a:hover{
-	background-color: #ddd;
+	background-color: #fff; 
+	color: green;
+	
 	
 }
 
@@ -197,29 +245,17 @@ div#menus-list ul li a:hover{
 	
 }
 
-button.navbar-toggle .icon-bar{
-	width: 25px;
-	height: 2px;
-	background-color: blue;
-}
 
-button.navbar-toggle .icon-bar + .icon-bar {
-  margin-top: 5px;
-}
 
-button:hover{
-	background-color: green;
-	
-}
 
 
 /* OPENED MENU LIst  */
-nav.navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:hover{
+/* nav.navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:hover{
 	color: green;
 	background-color: white;
 	
 }
-
+*/
 
 div#bottle{
  	/* border: 1px solid pink;*/
@@ -442,7 +478,7 @@ footer {
 	
 	div.navbar-brand h1#web-title{
 		
-		font-size: 4vw;
+		font-size: 1em;
 	}
 	
 	 p#description {
@@ -459,13 +495,14 @@ footer {
 	}
 	
 	div#menus-list {
-	background-color: #ddd; 
+	
 	/* padding-top: 25px; /*  push down MENU UL List  */
 	position: relative;  /*  returns  styling to bootstrap */
 	/* border-top: 2px dashed white; */
 	margin-top: 0;
-	opacity: .9;
-	background-color: #ddd;
+	opacity: .9; 
+	padding-left: 15px;
+	background-color: #eee;
 	
 	}
 
@@ -476,12 +513,27 @@ footer {
 	div#menus-list ul.primera li{
 			/* text-align: center; */
 			font-size: 16px;
-			padding: 3px 0 5px 0;
-			margin: 3px 0;
 			border-radius: 0;
 	}	
 
+	
+	div#menus-list ul ul{
+	
+	/* padding: 0; */
+	
+	/*margin-top: 45px; */
+	border-radius: 0px;
+	padding-top: 1px;
+	}
+
+	
+	div#menus-list ul ul.segunda li{
+	background-color: #ddd; 
+	text-align: left;
+	margin-top: 0 0 0;
 /*	
+
+
 	div#menus-list ul li ul.segunda li {
 			text-align: left;
 			
