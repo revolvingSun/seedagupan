@@ -13,25 +13,29 @@ body{
 header nav#nav-zone{
 	background-color: #eee;
 	
-	/* border: 1px solid red;*/
+	border: 0px solid red;
 	
 	/* text-transform: uppercase; */
 	/* min-height: 150px; */
-	box-shadow: 0 2px 1px #aaa; 
+	/* box-shadow: 0 2px 1px #aaa; */
 	border-radius: 0;
-	padding-bottom: 0px; 
+	
 	padding-top: 10px;
 	margin-bottom: 0;
 	
 } 
 
+
+/* CONTAINER HEADER  */
+
 div#bottle{
- 	/* border: 1px solid pink;*/
+ 	/*border: 1px solid blue; */
 	position: relative; 
+	/* border: 1px solid pink;*/
+	/* background-color: orange; */
 	
 	
 }
-
 
 div.navbar-header{
 	/* border: 1px solid yellow; 
@@ -42,9 +46,10 @@ div.navbar-header{
 
 
  div.navbar-brand{
-	/*border: 1px solid yellow;  */
+	/* border: 1px solid yellow;   */
 	text-transform: uppercase;
-	
+	background-color: #ccc;
+	opacity: .5;
 	/* background-color: orange;  */
 }
 
@@ -68,15 +73,18 @@ a, a:hover{
 /*  h1   */
 
 h1#web-title {
+	/* border: 1px solid yellow; */
+	/* vertical-align: top; */
+	
 	font-family: 'Kaushan Script', 'Courgette', cursive, serif;
 	font-size: 2em;
-	/* border: 1px solid yellow; */
-	margin: 0;
-	padding: 0
 	
-	text-shadow: 1px 1px 2px;
+	margin: 0;
+	padding: 0;
+	
+	text-shadow: 1px 1px 2px black;
 	color: #6dcff6;
-	/* vertical-align: top; */
+	
 	
 }
 
@@ -93,12 +101,14 @@ p#description{
 }
 
 #logo-img{
+	/* margin: 0 25px 0px 10px;  */
+	/* border: 1px solid black; */
+	
 	
 	background-color: #eee;
 	width: 100px;
 	height: 100px;
-	/* margin: 0 25px 0px 10px;  */
-	/* border: 1px solid black; */
+	
 	display: block;
 	background: url('../images/logoDagupan_small.png') no-repeat;
 	margin-right: 30px;
@@ -114,36 +124,60 @@ button#butones{
 	background-color: #efff00;
 	border-color: #6dcff6;
 	
-}
-
-div.navbar-header button:hover{
-	background-color: #efff00;
 	
 }
 
+button#butones:hover{
+		background-color: #ddd;
+		border-color: #efff00;
+		box-shadow:0px 3px 2px #ccc;
+	}
+
+/* default width is 100% */
 div#menus-list {
-	/* background-color: green; */
-	/* padding-top: 25px; /*  push down MENU UL List  */
+	/* background-color: #ddd;  */
+	
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	/* border-top: 2px solid red; */
+	
+	
+	/* border: 1px solid yellow;  */
+	margin-top: 0;
+	padding-top: 0;
 }
 
-div#menus-list ul {
+div#menus-list > ul {
+	/* margin: 0; */
+	margin-top: 0;
 	
-	/* background-color: red; */
-	/*margin-top: 45px; */
+	
+}
+
+div#menus-list > ul li{
+	/* margin: 0; */
+	padding: 1px 0;
+	text-align: left;
 	
 }
 
 div#menus-list ul ul{
-	padding: 2px;
-	/* background-color: red; */
+	
+	/* padding: 0; */
+	background-color: #eee; 
 	/*margin-top: 45px; */
 	border-radius: 5px;
 }
 
+
+
+
+div#menus-list ul li ul li{
+	background-color: #eee;
+	text-align: right;
+	/* opacity: .8; */
+	
+}
 
 div#menus-list li a{
 	display: block;
@@ -152,26 +186,25 @@ div#menus-list li a{
 	
 }
 
-div#menus-list ul li{
-	background-color: #eee;
-	text-align: right;
-	opacity: .8;
+div#menus-list ul li a:hover{
+	background-color: #ddd;
 	
 }
 
+
 .caret{
-	margin-left: 10px;
+	margin-left: 5px;
 	
 }
 
 button.navbar-toggle .icon-bar{
-	width: 35px;
-	height: 3px;
-	
+	width: 25px;
+	height: 2px;
+	background-color: blue;
 }
 
 button.navbar-toggle .icon-bar + .icon-bar {
-  margin-top: 8px;
+  margin-top: 5px;
 }
 
 button:hover{
@@ -179,12 +212,7 @@ button:hover{
 	
 }
 
-div#bottle{
- 	/* border: 1px solid pink;*/
-	position: relative; 
-	
-	
-}
+
 /* OPENED MENU LIst  */
 nav.navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:hover{
 	color: green;
@@ -245,6 +273,15 @@ footer {
 /*************   LARGE DEVICES    *****************/
 
 @media (min-width: 1200px){
+	
+	/*  bottle container is 10px bigger than background image to give space at bottom*/
+	div#bottle{
+		height: 160px;
+	
+	}
+	
+	
+	
 	#logo-img{
 		
 		width: 150px;
@@ -259,22 +296,18 @@ footer {
 	
 	}
 
-		div.navbar-brand{
-			height: 150px;
-	
-		}
+	div.navbar-brand{
+			height: 130px;
+			
+	}
 
 	div.navbar-brand h1#web-title{
-		/8 color: red; */
+		/* color: red; */
 		font-size: 2em;
 		
 	}
 	
-	div#menus-list {
-	/* background-color: green; */
-	padding-top: 105px; /*  push down MENU UL List  */
 	
-}
 }
 
 
@@ -286,6 +319,11 @@ footer {
 		
 	}
 	
+	div#bottle{
+		height: 110px;
+	
+	}
+	
 	div.navbar-header{
 	
 	
@@ -293,7 +331,7 @@ footer {
 	}
 	
 	div.navbar-brand{
-	height: 100px;
+	height: 90px;
 	/* background-color: green;*/
 	}
 	
@@ -321,6 +359,12 @@ footer {
 /***************        SMALL DEVICES  *********/
 
 @media (min-width: 768px) and (max-width: 991px){
+	div#bottle{
+		height: 110px;
+	
+	}
+	
+	
 	#logo-img{
 		
 		
@@ -334,14 +378,19 @@ footer {
 	
 	div#bottle{
 	/* border: 1px solid pink;*/
-	height: 90px;	
+	/* height: 100px;	*/
 	
-}
+	}
+	div.navbar-brand{
+	height: 100px;
+	/* background-color: green;*/
+	}
+	
 	
 	div#menus-list {
 	/* background-color: green; */
 	/*padding-top: 30px; /*  push down MENU UL List  */
-	bottom: 5px;
+	
 	
 	}
 	
@@ -380,25 +429,25 @@ footer {
 	}
 	
 	div#bottle{
- 	/* border: 1px solid pink;*/
-	
-	
-	
-}
-	
-	div#bottle{
-	/* border: 1px solid pink; */
-	height: 70px;	
+ 	/* borde5: 1px solid pink;*/
+	height: 50px; /* remove height the drop down menu will shift the whole body down*/
 	}
+	
+	
+	div.navbar-brand{
+	height: 50px;
+	/* background-color: green;*/
+	}	
+
 	
 	div.navbar-brand h1#web-title{
 		
-		font-size: 5vw;
+		font-size: 4vw;
 	}
 	
 	 p#description {
 		font-size: 2vw;
-		visibility: hidden;
+		display: none;
 		
 	}
 	
@@ -410,22 +459,36 @@ footer {
 	}
 	
 	div#menus-list {
-	/* background-color: green; */
+	background-color: #ddd; 
 	/* padding-top: 25px; /*  push down MENU UL List  */
 	position: relative;  /*  returns  styling to bootstrap */
-	border-top: 1px solid transparent;
-	margin-top: 0;;
+	/* border-top: 2px dashed white; */
+	margin-top: 0;
+	opacity: .9;
+	background-color: #ddd;
+	
+	}
+
+	
+	
 	
 
-}
-	div#menus-list ul li{
-			text-align: center;
-	}	
-	
-	div#menus-list ul ul.segundo li {
-			text-align: left;
-			margin-left: 50px;
-			color: white;
+	div#menus-list ul.primera li{
+			/* text-align: center; */
+			font-size: 16px;
+			padding: 3px 0 5px 0;
+			margin: 3px 0;
 			border-radius: 0;
 	}	
+
+/*	
+	div#menus-list ul li ul.segunda li {
+			text-align: left;
+			
+			color: white;
+			border-radius: 5px;
+			padding: 2px 0;
+			opacity: .8;
+	}	
+	*/
 }
