@@ -1,21 +1,26 @@
-*,a{
+*{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
+
 header nav#nav-zone{
-	border-radius: 0;
+	
 	border: 0;
 	background-color: #eee;
 	margin-bottom: 0;
-	/* border: 1px solid blue;*/
+	/* border: 3px solid red;*/
 	padding: 0;
 	text-transform: uppercase;
 	padding-bottom: 15px;
 	padding-top: 0px;
 	box-shadow: 0 2px 1px #aaa;
+	border-radius: 0;
+	
 } 
+
+
 
 div.navbar-header{
 	/* border: 1px solid yellow; */
@@ -23,16 +28,22 @@ div.navbar-header{
 	
 	
 }
-
+/*  navbar-brand section */
 div.navbar-brand{
 	border: 1px solid yellow; 
-	min-height: 40px;
-	margin-left: 15px;
-	/* background-color: green; */
+	min-height: 60px;
+	/* margin-left: 15px; */
+	background-color: green;  
 	padding: 0;
+	margin-left:15px;
 	
 }
 
+a, a:hover{
+	
+	
+}
+/*  h1   */
 div.navbar-brand h1#web-title {
 	font-family: 'Kaushan Script', 'Courgette', cursive, serif;
 	font-size: 2em;
@@ -62,7 +73,7 @@ p#description{
 	background-color: #eee;
 	width: 100px;
 	height: 100px;
-	margin: 0 25px 0px 10px;
+	margin: 0 25px 0px 10px; 
 	border: 1px solid black; 
 	display: block;
 	background: url('../images/logoDagupan_small.png') no-repeat;
@@ -79,6 +90,40 @@ button#butones{
 	/* border: 1px solid blue; */
 	margin: 10px 25px 0 0;
 	
+	
+}
+
+div#menus-list {
+	/* background-color: green; */
+	padding-top: 45px; /*  push down MENU UL List  */
+}
+
+div#menus-list ul {
+	padding: 2px;
+	/* background-color: red; */
+	/*margin-top: 45px; */
+	
+}
+
+div#menus-list ul ul{
+	padding: 2px;
+	/* background-color: red; */
+	/*margin-top: 45px; */
+	border-radius: 5px;
+}
+
+
+div#menus-list li a{
+	display: block;
+	text-decoration: none;
+	list-style-type: none;
+	
+}
+
+div#menus-list ul li{
+	background-color: #eee;
+	text-align: right;
+	opacity: .8;
 	
 }
 
@@ -154,11 +199,18 @@ footer {
 		height: 150px;
 		background: url('../images/logoDagupan.png') no-repeat;
 	}
+	
+	div#menus-list {
+	/* background-color: green; */
+	padding-top: 95px;
+	
+}
+	
 }
 
 /***********   MEDIUM DEVICES     **********/
 
-@media (min-width: 992px and max-width: 1199px){
+@media (min-width: 992px) and (max-width: 1199px){
 	#logo-img{
 		/* border: 1px solid blue; */
 		
@@ -169,7 +221,7 @@ footer {
 
 /***************        SMALL DEVICES  *********/
 
-@media (min-width: 768px and max-width: 991px){
+@media (min-width: 768px) and (max-width: 991px){
 	#logo-img{
 		
 		
@@ -177,17 +229,26 @@ footer {
 	}
 	
 	div.navbar-brand{
-		margin-bottom: 3px;
+		/* margin-bottom: 3px;*/
 		
 	}
 	
+	div#menus-list {
+	/* background-color: green; */
+	padding-top: 0px; /*  push down MENU UL List  */
+}
+	
+div.navbar-header{
+	
+	padding-left: 15px;
+	
 	div.navbar-brand h1#web-title{
-		font-size: 6vw;
-		
+		font-size: 3vw;
+		color: red;
 	}
 	
 	 p#description {
-		font-size: 4vw;
+		font-size: 2vw;
 		
 	}
 	
@@ -195,7 +256,7 @@ footer {
 
 /**********************    Very small devices  **************************/
 
-@media (max-width: 768px){
+@media (max-width: 767px){
 	#logo-img{
 		display: hidden;
 	}
@@ -206,12 +267,12 @@ footer {
 	}
 	
 	div.navbar-brand h1#web-title{
-		font-size: 5vw;
-		
+		font-size: 4vw;
+		color: red;
 	}
 	
 	 p#description {
-		font-size: 3vw;
+		font-size: 2vw;
 		
 	}
 	
