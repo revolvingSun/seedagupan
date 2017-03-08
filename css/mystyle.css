@@ -1,58 +1,82 @@
-*{
-	margin: 0;
-	padding: 0;
+* {
+	/* margin: 0;
+	padding: 0; */
 	box-sizing: border-box;
 }
 
+body{
+	
+}
+
+
 
 header nav#nav-zone{
-	
-	border: 0;
 	background-color: #eee;
-	margin-bottom: 0;
-	/* border: 3px solid red;*/
-	padding: 0;
-	text-transform: uppercase;
-	padding-bottom: 15px;
-	padding-top: 0px;
-	box-shadow: 0 2px 1px #aaa;
+	
+	/* border: 1px solid red;*/
+	
+	/* text-transform: uppercase; */
+	/* min-height: 150px; */
+	box-shadow: 0 2px 1px #aaa; 
 	border-radius: 0;
+	padding-bottom: 0px; 
+	padding-top: 10px;
+	margin-bottom: 0;
 	
 } 
 
+div#bottle{
+ 	/* border: 1px solid pink;*/
+	position: relative; 
+	
+	
+}
 
 
 div.navbar-header{
-	/* border: 1px solid yellow; */
-	/*background-color: green; */
-	
-	
+	/* border: 1px solid yellow; 
+	/* background-color: green; */
+	 /* removes gap between button and toggle menu list */
 }
 /*  navbar-brand section */
-div.navbar-brand{
-	border: 1px solid yellow; 
-	min-height: 60px;
-	/* margin-left: 15px; */
-	background-color: green;  
-	padding: 0;
-	margin-left:15px;
+
+
+ div.navbar-brand{
+	/*border: 1px solid yellow;  */
+	text-transform: uppercase;
+	
+	/* background-color: orange;  */
+}
+
+div.navbar-brand a {
+	text-decoration: none;
+	display: block;
 	
 }
+
+div.navbar-brand a:hover{
+	text-shadow: 2px 2px 2px #999;
+	
+}
+
 
 a, a:hover{
 	
 	
 }
+
 /*  h1   */
-div.navbar-brand h1#web-title {
+
+h1#web-title {
 	font-family: 'Kaushan Script', 'Courgette', cursive, serif;
 	font-size: 2em;
 	/* border: 1px solid yellow; */
+	margin: 0;
+	padding: 0
+	
 	text-shadow: 1px 1px 2px;
 	color: #6dcff6;
-	margin: 0 0 0 0px;
-	text-align: left;
-	
+	/* vertical-align: top; */
 	
 }
 
@@ -62,7 +86,7 @@ p#description{
 	
 	text-shadow: 1px 1px 2px;
 	color: #6dcff6;
-	
+	margin-top: 10px;
 	
 	
 	
@@ -73,33 +97,41 @@ p#description{
 	background-color: #eee;
 	width: 100px;
 	height: 100px;
-	margin: 0 25px 0px 10px; 
-	border: 1px solid black; 
+	/* margin: 0 25px 0px 10px;  */
+	/* border: 1px solid black; */
 	display: block;
 	background: url('../images/logoDagupan_small.png') no-repeat;
+	margin-right: 30px;
+	
 }
 
 /* container  for header section*/
-div#bottle{
-	border: 1px solid pink;
-	padding: 0;
-	
-}
+
 
 button#butones{
 	/* border: 1px solid blue; */
-	margin: 10px 25px 0 0;
 	
+	background-color: #efff00;
+	border-color: #6dcff6;
+	
+}
+
+div.navbar-header button:hover{
+	background-color: #efff00;
 	
 }
 
 div#menus-list {
 	/* background-color: green; */
-	padding-top: 45px; /*  push down MENU UL List  */
+	/* padding-top: 25px; /*  push down MENU UL List  */
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	/* border-top: 2px solid red; */
 }
 
 div#menus-list ul {
-	padding: 2px;
+	
 	/* background-color: red; */
 	/*margin-top: 45px; */
 	
@@ -127,25 +159,44 @@ div#menus-list ul li{
 	
 }
 
-/*
-nav div.container{
-	border: 1px solid red;
+.caret{
+	margin-left: 10px;
 	
 }
 
- p#log-img{
-	margin: 0;
-	padding: 0;
-	background: url('images/logoDagupanSeal.png') no-repeat;
-	width: 200px;
-	height: 200px;	
-	border: 1px solid black; 
-	overflow: hidden;
+button.navbar-toggle .icon-bar{
+	width: 35px;
+	height: 3px;
 	
 }
 
-div.navbar-brand{
-	border: 1px solid green;
+button.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 8px;
+}
+
+button:hover{
+	background-color: green;
+	
+}
+
+div#bottle{
+ 	/* border: 1px solid pink;*/
+	position: relative; 
+	
+	
+}
+/* OPENED MENU LIst  */
+nav.navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:hover{
+	color: green;
+	background-color: white;
+	
+}
+
+
+div#bottle{
+ 	/* border: 1px solid pink;*/
+	position: relative; 
+	
 	
 }
 
@@ -154,6 +205,7 @@ div#mainContent{
 	padding: 0;
 	margin: 0;
 	background-color: #6dcff6;
+	
 	
 	
 }
@@ -194,19 +246,37 @@ footer {
 
 @media (min-width: 1200px){
 	#logo-img{
-		/* border: 3px solid pink;*/
+		
 		width: 150px;
 		height: 150px;
 		background: url('../images/logoDagupan.png') no-repeat;
+		
 	}
 	
 	div#menus-list {
 	/* background-color: green; */
-	padding-top: 95px;
+	/* padding-top: 95px; */
+	
+	}
+
+		div.navbar-brand{
+			height: 150px;
+	
+		}
+
+	div.navbar-brand h1#web-title{
+		/8 color: red; */
+		font-size: 2em;
+		
+	}
+	
+	div#menus-list {
+	/* background-color: green; */
+	padding-top: 105px; /*  push down MENU UL List  */
 	
 }
-	
 }
+
 
 /***********   MEDIUM DEVICES     **********/
 
@@ -216,7 +286,36 @@ footer {
 		
 	}
 	
+	div.navbar-header{
 	
+	
+	
+	}
+	
+	div.navbar-brand{
+	height: 100px;
+	/* background-color: green;*/
+	}
+	
+	
+	
+	
+	div.navbar-brand h1#web-title{
+		font-size: 1.5em;
+		
+	}
+	
+	 p#description {
+		font-size: 1em;
+		
+	}
+	
+	div#menus-list {
+	/* background-color: green; */
+	/* padding-top: 65px; /*  push down MENU UL List  */
+		
+	}	
+
 }
 
 /***************        SMALL DEVICES  *********/
@@ -229,26 +328,41 @@ footer {
 	}
 	
 	div.navbar-brand{
-		/* margin-bottom: 3px;*/
+		
 		
 	}
 	
-	div#menus-list {
-	/* background-color: green; */
-	padding-top: 0px; /*  push down MENU UL List  */
+	div#bottle{
+	/* border: 1px solid pink;*/
+	height: 90px;	
+	
 }
 	
-div.navbar-header{
+	div#menus-list {
+	/* background-color: green; */
+	/*padding-top: 30px; /*  push down MENU UL List  */
+	bottom: 5px;
 	
-	padding-left: 15px;
+	}
+	
+	header nav#nav-zone{
+		padding-top: 0;
+		
+	}
+	
+	div.navbar-header{
+		
+	
+	}
 	
 	div.navbar-brand h1#web-title{
-		font-size: 3vw;
-		color: red;
+		font-size: 2em;
+		color: ;
+		
 	}
 	
 	 p#description {
-		font-size: 2vw;
+		font-size: 1em;
 		
 	}
 	
@@ -258,31 +372,60 @@ div.navbar-header{
 
 @media (max-width: 767px){
 	#logo-img{
-		display: hidden;
+		
 	}
-	div.navbar-brand{
-		margin-bottom: 2px;
-		margin-top: 10px;
+	div.navbar-header{
+		
 		
 	}
 	
+	div#bottle{
+ 	/* border: 1px solid pink;*/
+	
+	
+	
+}
+	
+	div#bottle{
+	/* border: 1px solid pink; */
+	height: 70px;	
+	}
+	
 	div.navbar-brand h1#web-title{
-		font-size: 4vw;
-		color: red;
+		
+		font-size: 5vw;
 	}
 	
 	 p#description {
 		font-size: 2vw;
+		visibility: hidden;
 		
 	}
 	
-	header{
-		
-		
-	}
+	
 	/*  decrease the header height */
 	header nav#nav-zone{
-		padding-bottom: 4vw;
+	
 		
 	}
+	
+	div#menus-list {
+	/* background-color: green; */
+	/* padding-top: 25px; /*  push down MENU UL List  */
+	position: relative;  /*  returns  styling to bootstrap */
+	border-top: 1px solid transparent;
+	margin-top: 0;;
+	
+
+}
+	div#menus-list ul li{
+			text-align: center;
+	}	
+	
+	div#menus-list ul ul.segundo li {
+			text-align: left;
+			margin-left: 50px;
+			color: white;
+			border-radius: 0;
+	}	
 }
