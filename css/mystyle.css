@@ -162,10 +162,7 @@ button#butones:hover span.icon-bar {
 /**** End of BUTTON  *****/ 
 
 
-li.active{
-	background-color: #fff;
-	opacity: 1;
-}	
+
 
 /* default width is 100% */
 
@@ -175,7 +172,7 @@ div#menus-list {
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	
+	text-transform: uppercase;
 	
 	/* border: 1px solid yellow;  */
 	/* margin-top: 0;
@@ -211,6 +208,7 @@ div#menus-list ul ul{
 	opacity: .9;
 	text-align: right;
 	padding: 0;
+	padding-top: 7px;
 }
 
 
@@ -239,9 +237,16 @@ div#menus-list ul li a:hover{
 	
 }
 
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: green;
+  background-color: #efff00;
+  border-bottom: 1px solid #eee;
+}
 
 .caret{
-	margin-left: 5px;
+	margin-left: 2px;
 	
 }
 
@@ -524,13 +529,18 @@ footer {
 	/*margin-top: 45px; */
 	border-radius: 0px;
 	padding-top: 1px;
+	
 	}
 
 	
 	div#menus-list ul ul.segunda li{
 	background-color: #ddd; 
+	
+	
+	
 	text-align: left;
 	margin-top: 0 0 0;
+	padding: 5px 0;
 /*	
 
 
