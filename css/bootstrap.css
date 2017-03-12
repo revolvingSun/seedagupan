@@ -4561,6 +4561,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #555;
     background-color: #e7e7e7;
+	
+	color: white;
+	background-color: red;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,

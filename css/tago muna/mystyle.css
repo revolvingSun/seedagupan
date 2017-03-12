@@ -1,0 +1,550 @@
+* {
+	/* margin: 0;
+	padding: 0; */
+	box-sizing: border-box;
+}
+
+body{
+	
+}
+
+
+
+div nav#nav-zone{
+	background-color: #eee;
+	
+	border: 0px solid red;
+	
+	/* text-transform: uppercase; */
+	/* min-height: 150px; */
+	box-shadow: 0 3px 2px #bbb; 
+	border-radius: 0;
+	
+	padding-top: 10px;
+	margin-bottom: 0;
+	
+} 
+
+
+/* CONTAINER HEADER  */
+
+div#bottle{
+ 	/*border: 1px solid blue; */
+	position: relative; 
+	/* border: 1px solid pink;*/
+	/* background-color: orange; */
+	
+	
+}
+
+div.navbar-header{
+	/* border: 1px solid yellow; 
+	/* background-color: green; */
+	 /* removes gap between button and toggle menu list */
+}
+/*  navbar-brand section */
+
+
+ div.navbar-brand{
+	/* border: 1px solid yellow;   */
+	text-transform: uppercase;
+	/* background-color: #ccc;*/
+	
+	/* background-color: orange;  */
+}
+
+div.navbar-brand a {
+	text-decoration: none;
+	display: block;
+	
+}
+
+
+
+a, a:hover{
+	
+	
+}
+
+/*  h1   */
+
+h1#web-title {
+	/* border: 1px solid yellow; */
+	/* vertical-align: top; */
+	
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Rock Salt', cursive;
+	font-family: 'Cherry Cream Soda', cursive;
+	font-size: 2em;
+	
+	margin: 0;
+	padding: 0;
+	
+	text-shadow: 1px 0px 0px #bbb; 
+	color: #6dcff6;
+	
+	
+}
+
+p#description{
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Rock Salt', cursive;
+	font-family: 'Cherry Cream Soda', cursive;
+	font-size: 1em;
+	
+	text-shadow: 1px 0px 0px #bbb;
+	color: #6dcff6;
+	margin-top: 10px;
+	
+	
+	
+}
+
+h1#web-title:hover{
+	text-shadow: 1px 1px 1px #bbb; 
+	
+}
+
+
+#logo-img{
+	/* margin: 0 25px 0px 10px;  */
+	/* border: 1px solid black; */
+	
+	
+	background-color: #eee;
+	width: 100px;
+	height: 100px;
+	
+	display: block;
+	background: url('../images/logoDagupan_small.png') no-repeat;
+	margin-right: 30px;
+	
+}
+
+/* container  for header section*/
+
+
+/******* Button section    ******/
+
+button#butones{
+	/* border: 1px solid blue; */
+	
+	background-color: #efff00;
+	border-color: #6dcff6;
+	box-shadow:0px 2px 2px #ccc; 
+	
+}
+
+button#butones span.icon-bar{
+	width: 23px;
+	height: 2px;
+	background-color: #6dcff6;
+	
+}
+
+button#butones:hover{
+		background-color: #ddd;
+		
+		box-shadow:0px 3px 2px #ccc; 
+		
+	}
+	
+button#butones:hover span.icon-bar {
+	width: 23px;
+	height: 2px;
+	background-color: #6dcff6;
+	box-shadow:0px 1px 2px #ccc; 
+}
+
+button#butones:hover span.icon-bar {
+	width: 23px;
+	height: 2px;
+	background-color: #6dcff6;
+	box-shadow:0px 1px 2px #ccc; 
+}
+
+/**** End of BUTTON  *****/ 
+
+
+
+
+/* default width is 100% */
+
+div#menus-list {
+	background-color: #ddd;
+	
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	text-transform: uppercase;
+	
+	/* border: 1px solid yellow;  */
+	/* margin-top: 0;
+	padding-top: 0;*/
+	
+	padding-left: 0;
+}
+
+div#menus-list > ul {
+	/* margin: 0; */
+	margin-top: 0;
+	margin-bottom: 0;
+	
+	
+	
+}
+
+div#menus-list ul.primera li{
+	/* margin: 0; */
+	/* padding: 1px 0;*/ 
+	text-align: center;
+	background-color: #ddd;
+	margin: 0;
+	
+	
+}
+
+div#menus-list ul ul{
+	
+	/* padding: 0; */
+	background-color: #ddd; 
+	
+	border-radius:  0 0 5px 5px;
+	
+	text-align: right;
+	padding: 0;
+	padding-top: 7px;
+}
+
+
+
+
+div#menus-list ul ul.segunda li{
+	background-color: #ddd; 
+	text-align: right;
+	border-bottom: 1px dotted #ccc;
+	
+	
+
+	
+}
+
+div#menus-list li a{
+	display: block;
+	text-decoration: none;
+	list-style-type: none;
+	
+}
+
+div#menus-list ul li a:hover{
+	background-color: #fff; 
+	color: green;
+	
+	
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: green;
+  background-color: #efff00;
+  border-bottom: 1px solid #eee;
+}
+
+.caret{
+	margin-left: 2px;
+	
+}
+
+
+
+
+
+/* OPENED MENU LIst  */
+/* nav.navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:hover{
+	color: green;
+	background-color: white;
+	
+}
+*/
+
+div#bottle{
+ 	/* border: 1px solid pink;*/
+	position: relative; 
+	height: 190px;
+	
+}
+
+/****************    MAIN CONTENT SECTION   ********************/
+div#whole_content{
+	padding: 0;
+	margin: 0;
+	background-color: #6dcff6;
+	
+	
+	
+}
+
+div#main_container{
+	height: 500px;
+	overflow: auto;
+	border: 1px solid #222; 
+	
+	
+}
+
+
+/****************    END OF MAIN CONTENT    ********************/
+
+
+/****************    FOOTER CONTENT         ********************/
+footer {
+	background-color: #efff00;
+	
+}
+
+ div#footer-container{
+	
+	border: 1px solid #222;
+	height: 200px;
+	
+}
+
+
+
+/****************    END OF FOOTER			*******************/   
+
+
+
+
+/****************    MEDIA QUERIES SECTION  *******************/
+
+/*************   LARGE DEVICES    *****************/
+
+@media (min-width: 1200px){
+	
+	/*  bottle container is 10px bigger than background image to give space at bottom*/
+	div#bottle{
+		height: 160px;
+	
+	}
+	
+	
+	
+	#logo-img{
+		
+		width: 150px;
+		height: 150px;
+		background: url('../images/logoDagupan.png') no-repeat;
+		
+	}
+	
+	div#menus-list {
+	/* background-color: green; */
+	
+	}
+
+	div.navbar-brand{
+			height: 130px;
+			
+	}
+
+	div.navbar-brand h1#web-title{
+		/* color: red; */
+		font-size: 2em;
+		
+	}
+	
+	
+}
+
+
+/***********   MEDIUM DEVICES     **********/
+
+@media (min-width: 992px) and (max-width: 1199px){
+	#logo-img{
+		/* border: 1px solid blue; */
+		
+	}
+	
+	div#bottle{
+		height: 110px;
+	
+	}
+	
+	div.navbar-header{
+	
+	
+	
+	}
+	
+	div.navbar-brand{
+	height: 90px;
+	/* background-color: green;*/
+	}
+	
+	
+	
+	
+	div.navbar-brand h1#web-title{
+		font-size: 1.5em;
+		
+	}
+	
+	 p#description {
+		font-size: 1em;
+		
+	}
+	
+	div#menus-list {
+	/* background-color: green; */
+	/* padding-top: 65px; /*  push down MENU UL List  */
+		
+	}	
+
+}
+
+/***************        SMALL DEVICES  *********/
+
+@media (min-width: 768px) and (max-width: 991px){
+	div#bottle{
+		height: 110px;
+	
+	}
+	
+	
+	#logo-img{
+		
+		
+		
+	}
+	
+	div.navbar-brand{
+		
+		
+	}
+	
+	div#bottle{
+	/* border: 1px solid pink;*/
+	/* height: 100px;	*/
+	
+	}
+	div.navbar-brand{
+	height: 100px;
+	/* background-color: green;*/
+	}
+	
+	
+	div#menus-list {
+	/* background-color: green; */
+	/*padding-top: 30px; /*  push down MENU UL List  */
+	
+	
+	}
+	
+	header nav#nav-zone{
+		padding-top: 0;
+		
+	}
+	
+	div.navbar-header{
+		
+	
+	}
+	
+	div.navbar-brand h1#web-title{
+		font-size: 2em;
+		color: ;
+		
+	}
+	
+	 p#description {
+		font-size: 1em;
+		
+	}
+	
+}
+
+/**********************    Very small devices  **************************/
+
+@media (max-width: 767px){
+	#logo-img{
+		
+	}
+	div.navbar-header{
+		
+		
+	}
+	
+	div#bottle{
+ 	/* borde5: 1px solid pink;*/
+	height: 50px; /* remove height the drop down menu will shift the whole body down*/
+	}
+	
+	
+	div.navbar-brand{
+	height: 50px;
+	/* background-color: green;*/
+	}	
+
+	
+	div.navbar-brand h1#web-title{
+		
+		font-size: 1em;
+	}
+	
+	 p#description {
+		font-size: 2vw;
+		display: none;
+		
+	}
+	
+	
+	/*  decrease the header height */
+	header nav#nav-zone{
+	
+		
+	}
+	
+	div#menus-list {
+	
+	/* padding-top: 25px; /*  push down MENU UL List  */
+	position: relative;  /*  returns  styling to bootstrap */
+	/* border-top: 2px dashed white; */
+	margin-top: 0;
+	
+	padding-left: 15px;
+	background-color: #eee;
+	
+	}
+
+	
+	
+	
+
+	div#menus-list ul.primera li{
+			
+			font-size: 16px;
+			border-radius: 0;
+	}	
+
+	
+	div#menus-list ul ul{
+	
+	
+	border-radius: 0px;
+	padding-top: 1px;
+	
+	}
+
+	
+	div#menus-list ul ul.segunda li{
+	background-color: #ddd; 
+	
+	
+	
+	text-align: left;
+	margin-top: 0 0 0;
+	padding: 5px 0;
+
+}

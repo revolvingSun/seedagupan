@@ -196,6 +196,7 @@ div#menus-list ul.primera li{
 	text-align: center;
 	background-color: #ddd;
 	margin: 0;
+	border-bottom: 1px dashed #eee;
 	
 }
 
